@@ -6,4 +6,4 @@ sudo apt -y install apt-transport-https gnupg lsb-release
 wget -O - https://repo.jellyfin.org/debian/jellyfin_team.gpg.key | sudo apt-key add -
 echo "deb [arch=amd64] https://repo.jellyfin.org/debian ubuntu main" | sudo tee /etc/apt/sources.list.d/jellyfin.list
 sudo apt update
-sudo apt install jellyfin
+sudo apt -y install jellyfin
